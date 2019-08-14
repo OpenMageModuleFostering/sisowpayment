@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/sisowpayment",
+    "type": "magento-module",
+    "license": "OSL",
+    "homepage": "",
+    "description": "Update 4.5.10 for Sisow plug-in",
+    "authors": [
+    {
+        "name": "Sisow",
+        "email": "info@sisow.nl"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
