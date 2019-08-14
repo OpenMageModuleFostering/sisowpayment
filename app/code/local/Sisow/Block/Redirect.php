@@ -204,7 +204,7 @@ class Sisow_Block_Redirect extends Mage_Core_Block_Abstract
 		if( $method == 'klarna' || $method == 'klarnaacc' )
 		{
 			$arg['directinvoice'] = (Mage::getStoreConfig('payment/sisow_'.$method.'/sendklarnainvoice') == 3) ? 'true' : 'false';
-			//$arg['mailinvoice'] = (Mage::getStoreConfig('payment/sisow_'.$method.'/sendklarnainvoice') == 3) ? 'true' : 'false';
+			$arg['mailinvoice'] = (Mage::getStoreConfig('payment/sisow_'.$method.'/sendklarnainvoice') == 3) ? 'true' : 'false';
 			
 			if($method == 'klarnaacc')
 				$arg['pclass'] = $_GET['pclass'];

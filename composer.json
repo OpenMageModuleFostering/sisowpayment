@@ -1,12 +1,12 @@
 {
     "name": "OpenMageModuleFostering/sisowpayment",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-v3.0",
     "homepage": "",
-    "description": "Update 4.5.10 for Sisow plug-in",
+    "description": "Sisow payment methods",
     "authors": [
     {
-        "name": "Sisow",
+        "name": "sisow",
         "email": "info@sisow.nl"
     }
 ],
