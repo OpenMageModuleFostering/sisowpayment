@@ -265,7 +265,7 @@ class Sisow_Block_Redirect extends Mage_Core_Block_Abstract
 				Mage::getSingleton('checkout/session')->addError("U heeft een verkeerd IBAN ingevoerd.");
 			else if( ($base->payment == 'klarna' || $base->payment == 'klarnaacc') && $base->errorMessage != '')
 				Mage::getSingleton('checkout/session')->addError($base->errorMessage);
-			else if ($base->payment == 'klarna' || $base->payment == 'klarnaacc' || $base->payment == focum)
+			else if ($base->payment == 'klarna' || $base->payment == 'klarnaacc' || $base->payment == 'focum')
 				Mage::getSingleton('checkout/session')->addError("Betalen met Achteraf Betalen is op dit moment niet mogelijk, betaal anders.");
 			else
 				Mage::getSingleton('checkout/session')->addError("Sisow: " . $this->__('No communication')." (". $ex .", ". $base->errorCode . ")");

@@ -18,20 +18,14 @@ class Sisow_Helper_Paymentfee extends Mage_Payment_Helper_Data
 			return;
 		}
 		
-		if( Mage::getSingleton('core/session')->getSisowTotal() > 0)
-		{			
-			if( $quote->getGrandTotal()  > 0 && Mage::getSingleton('core/session')->getSisowTotal() <> $quote->getGrandTotal() )
-			{
-				Mage::getSingleton('core/session')->setSisowTotal($quote->getGrandTotal());
-				$order_total = Mage::getSingleton('core/session')->getSisowTotal();
-			}
-			$order_total = Mage::getSingleton('core/session')->getSisowTotal();
-		}
-		else
-		{
-			Mage::getSingleton('core/session')->setSisowTotal($quote->getGrandTotal());
-			$order_total = $quote->getGrandTotal();
-		}
+		$sisowfee = (int)Mage::getSingleton('core/session')->getSisowFeeInc();
+		
+		//Mage::log('sisowfee: ' . $sisowfee, null, 'log_sisow_fee.log');
+		//Mage::log('getGrandTotal: ' . $quote->getGrandTotal(), null, 'log_sisow_fee.log');
+		
+		$order_total = $quote->getGrandTotal() - $sisowfee;
+		
+		//Mage::log('order_total: ' . $order_total, null, 'log_sisow_fee.log');
 		
 		$charge = 0;
 		if(strpos($paymentfee, ';') > 0)
