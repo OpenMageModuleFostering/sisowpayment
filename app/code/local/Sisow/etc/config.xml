@@ -238,6 +238,15 @@
 				<allowspecific>1</allowspecific>
 				<specificcountry>NL</specificcountry>
 			</sisow_ideal>
+			<sisow_idealqr>
+				<group>sisow</group>
+				<active>0</active>
+				<model>sisow/methods_Idealqr</model>
+				<title>Sisow iDEAL QR</title>
+				<testmode>0</testmode>
+				<allowspecific>1</allowspecific>
+				<specificcountry>NL</specificcountry>
+			</sisow_idealqr>
 			<sisow_mistercash>
 				<group>sisow</group>
 				<active>0</active>
@@ -307,6 +316,14 @@
 				<testmode>0</testmode>
 				<allowspecific>0</allowspecific>
 			</sisow_maestro>
+			<sisow_vpay>
+				<group>sisow</group>
+				<active>0</active>
+				<model>sisow/methods_Vpay</model>
+				<title>Sisow V PAY</title>
+				<testmode>0</testmode>
+				<allowspecific>0</allowspecific>
+			</sisow_vpay>
 			<sisow_overboeking>
 				<group>sisow</group>
 				<active>0</active>

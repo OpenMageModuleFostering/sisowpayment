@@ -1,8 +1,8 @@
 <?php
-class Sisow_Model_Methods_Maestro extends Sisow_Model_Methods_Abstract
+class Sisow_Model_Methods_Vpay extends Sisow_Model_Methods_Abstract
 {
-    protected $_code = 'sisow_maestro'; //sisow = modulenaam, ideal = paymentcode sisow
-	protected $_paymentcode = 'maestro';
+    protected $_code = 'sisow_vpay'; //sisow = modulenaam, ideal = paymentcode sisow
+	protected $_paymentcode = 'vpay';
 	
 	//blocks for loading templates in checkout
 	protected $_formBlockType = 'sisow/paymentmethod_default';
