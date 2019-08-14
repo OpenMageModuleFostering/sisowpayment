@@ -247,6 +247,15 @@
 				<allowspecific>1</allowspecific>
 				<specificcountry>NL</specificcountry>
 			</sisow_idealqr>
+			<sisow_bunq>
+				<group>sisow</group>
+				<active>0</active>
+				<model>sisow/methods_Bunq</model>
+				<title>Sisow bunq</title>
+				<testmode>0</testmode>
+				<allowspecific>1</allowspecific>
+				<specificcountry>NL</specificcountry>
+			</sisow_bunq>
 			<sisow_mistercash>
 				<group>sisow</group>
 				<active>0</active>
